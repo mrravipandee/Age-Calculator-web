@@ -1,0 +1,53 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --offWhite: hsl(0, 0%, 94%);
+    --lightGrey: hsl(0, 0%, 86%);
+    --smokeyGrey: hsl(0, 1%, 44%);
+    --offBlack: hsl(0, 0%, 8%);
+    --purple: hsl(259, 100%, 65%);
+    --lightRed: hsl(0, 100%, 67%);
+}
+
+.main {
+    background: var(--lightGrey);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conatainer {
+    background-color: var(--white);
+    width: 35rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 10rem;
+    padding: 30px;
+    margin: 20px;
+}
+
+
+
+.day > .label {
+    display: inline;
+    margin-right: 5rem;
+    width: 2rem;
+    color: var(--smokeyGrey);
+    font-size: 1rem;
+}
+
+.day > .input {
+    display: block;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 2rem;
+    color: var(--smokeyGrey);
+}
+
+.month > .label {
+    display: inline;
+    margin-right: 5rem;
+    width: 2rem;
+    color: var(--smokeyGrey);
+    font-size: 1rem;
+}
+
