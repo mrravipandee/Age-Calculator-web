@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+* {
+    font-family: Poppins-Regular !important;
+}
+
 :root {
     --white: hsl(0, 0%, 100%);
     --offWhite: hsl(0, 0%, 94%);
@@ -8,46 +17,81 @@
     --lightRed: hsl(0, 100%, 67%);
 }
 
-.main {
-    background: var(--lightGrey);
-    height: 100vh;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    background-color: var(--offWhite);
 }
 
-.conatainer {
+.container {
     background-color: var(--white);
-    width: 35rem;
-    border-radius: 20px;
-    border-bottom-right-radius: 10rem;
+    width: 420px;
+    max-width: 80%;
     padding: 30px;
-    margin: 20px;
+    position: relative;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-
-
-.day > .label {
-    display: inline;
-    margin-right: 5rem;
-    width: 2rem;
-    color: var(--smokeyGrey);
-    font-size: 1rem;
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
-.day > .input {
-    display: block;
-    margin-right: 1rem;
-    width: 5rem;
-    height: 2rem;
-    color: var(--smokeyGrey);
+.input-flex {
+    display: flex;
+    border-bottom: 2px solid var(--offWhite);
+    margin-bottom: 20px;
 }
 
-.month > .label {
-    display: inline;
-    margin-right: 5rem;
-    width: 2rem;
-    color: var(--smokeyGrey);
-    font-size: 1rem;
+input {
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--offWhite);
+    /* border: none; */
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid var(--purple);
+}
+
+small {
+    color: red;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.submit-button {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    background-color: var(--purple);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+}
+
+.submit-button:hover {
+    background-color: black;
+}
+
+.output span {
+    font-size: 2.75 rem;
+    color: var(--purple);
+    font-style: italic;
 }
 
